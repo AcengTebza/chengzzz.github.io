@@ -1,2 +1,2 @@
-# a.chengzzz.github.io
+# chengzzz.github.io
 Building out my personal website
