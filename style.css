@@ -29,3 +29,24 @@ footer {
     background-color: #c75100;
     color: white;
 }
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+.profile-section {
+    flex-shrink: 0;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* THIS makes it a circle */
+    border: 3px solid #e36414;
+}
