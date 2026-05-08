@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,8 +19,20 @@ nav {
     padding: 1rem;
 }
 
-nav a:hover {
-    color: #ffb703;
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
 }
 
 h2 {
