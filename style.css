@@ -64,3 +64,55 @@ footer {
     border-radius: 50%; /* THIS makes it a circle */
     border: 3px solid #e36414;
 }
+
+
+.card {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card-front {
+    background-color: #e36414;
+    color: white;
+}
+
+.card-back {
+    background-color: #c75100;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.cards-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
